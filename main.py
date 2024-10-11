@@ -21,3 +21,10 @@ def introduccion():
     imprimir_lento("Elige tu camino sabiamente, porque cada decisión dará forma a tu destino.")
     imprimir_lento("Comencemos tu aventura...\n")
     time.sleep(2)
+
+def elegir_personaje():
+    """Selección del personaje."""
+    imprimir_lento("Elige tu clase de personaje:")
+    imprimir_lento("1. Guerrero")
+    imprimir_lento("2. Mago")
+    imprimir_lento("3. Ladrón\n")
