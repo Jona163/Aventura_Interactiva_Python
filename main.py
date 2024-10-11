@@ -40,3 +40,9 @@ def elegir_personaje():
         else:
             imprimir_lento("Por favor, elige una opción válida.\n")
 
+def encuentro_enemigo():
+    """Encuentro con un enemigo."""
+    enemigos = ["Orco", "Esqueleto", "Lobo", "Goblin"]
+    enemigo = random.choice(enemigos)
+    imprimir_lento(f"Te has encontrado con un {enemigo}. ¡Prepárate para la batalla!\n")
+    return enemigo
