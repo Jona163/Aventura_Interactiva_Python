@@ -86,3 +86,10 @@ def tesoro():
     tesoro_obtenido = random.choice(tesoros)
     imprimir_lento(f"¡Has encontrado un cofre y dentro está un {tesoro_obtenido}!")
     imprimir_lento(f"¡El {tesoro_obtenido} ahora es tuyo!\n")
+
+
+def main():
+    """Función principal que ejecuta el juego."""
+    introduccion()
+    personaje = elegir_personaje()
+    imprimir_lento(f"Has elegido ser un {personaje}. ¡Una excelente elección!\n")
