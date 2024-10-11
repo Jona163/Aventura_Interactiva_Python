@@ -76,8 +76,13 @@ def combate(personaje, enemigo):
         imprimir_lento(f"El {enemigo} te ataca y te hace {dano_enemigo} de daño.")
         vida_personaje -= dano_enemigo
 
-
     if vida_personaje <= 0:
         imprimir_lento("¡Has sido derrotado en batalla!\n")
         return False
 
+def tesoro():
+    """Ganar un tesoro tras la victoria."""
+    tesoros = ["Espada legendaria", "Poción mágica", "Armadura dorada", "Collar de poder"]
+    tesoro_obtenido = random.choice(tesoros)
+    imprimir_lento(f"¡Has encontrado un cofre y dentro está un {tesoro_obtenido}!")
+    imprimir_lento(f"¡El {tesoro_obtenido} ahora es tuyo!\n")
