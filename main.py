@@ -75,3 +75,9 @@ def combate(personaje, enemigo):
         dano_enemigo = random.randint(5, 20)
         imprimir_lento(f"El {enemigo} te ataca y te hace {dano_enemigo} de daño.")
         vida_personaje -= dano_enemigo
+
+
+    if vida_personaje <= 0:
+        imprimir_lento("¡Has sido derrotado en batalla!\n")
+        return False
+
