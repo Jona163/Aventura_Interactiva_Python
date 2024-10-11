@@ -28,3 +28,15 @@ def elegir_personaje():
     imprimir_lento("1. Guerrero")
     imprimir_lento("2. Mago")
     imprimir_lento("3. Ladrón\n")
+
+    while True:
+        eleccion = input("Escribe 1, 2, o 3: ").strip()
+        if eleccion == '1':
+            return "Guerrero"
+        elif eleccion == '2':
+            return "Mago"
+        elif eleccion == '3':
+            return "Ladrón"
+        else:
+            imprimir_lento("Por favor, elige una opción válida.\n")
+
