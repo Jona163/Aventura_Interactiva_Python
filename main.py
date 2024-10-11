@@ -46,3 +46,8 @@ def encuentro_enemigo():
     enemigo = random.choice(enemigos)
     imprimir_lento(f"Te has encontrado con un {enemigo}. ¡Prepárate para la batalla!\n")
     return enemigo
+
+def combate(personaje, enemigo):
+    """Sistema de combate."""
+    vida_personaje = 100
+    vida_enemigo = 50
