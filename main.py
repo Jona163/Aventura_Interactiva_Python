@@ -1,4 +1,4 @@
 # Autor: Jonathan Hernández
-# Fecha: 09 octubre 2024
-# Descripción: Código para complejos mejorados.
+# Fecha: 10 octubre 2024
+# Descripción: Aventura Interactiva en Python.
 # GitHub: https://github.com/Jona163
