@@ -60,9 +60,9 @@ def combate(personaje, enemigo):
 
         accion = input("Escribe 1 o 2: ").strip()
         if accion == '1':
-            dano = random.randint(10, 30)
+            danio = random.randint(10, 30)
             imprimir_lento(f"¡Atacas al {enemigo} y le haces {dano} de daño!")
-            vida_enemigo -= dano
+            vida_enemigo -= danio
             if vida_enemigo <= 0:
                 imprimir_lento(f"¡Has derrotado al {enemigo}!\n")
                 return True
