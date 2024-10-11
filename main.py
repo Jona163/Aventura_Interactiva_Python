@@ -87,9 +87,18 @@ def tesoro():
     imprimir_lento(f"¡Has encontrado un cofre y dentro está un {tesoro_obtenido}!")
     imprimir_lento(f"¡El {tesoro_obtenido} ahora es tuyo!\n")
 
-
 def main():
     """Función principal que ejecuta el juego."""
     introduccion()
     personaje = elegir_personaje()
     imprimir_lento(f"Has elegido ser un {personaje}. ¡Una excelente elección!\n")
+
+ continuar = True
+    while continuar:
+        enemigo = encuentro_enemigo()
+        resultado = combate(personaje, enemigo)
+        if resultado:
+            tesoro()
+        else:
+            imprimir_lento("Te recuperas de la batalla y decides continuar tu aventura otro día...\n")
+            continuar = False
