@@ -102,3 +102,8 @@ def main():
         else:
             imprimir_lento("Te recuperas de la batalla y decides continuar tu aventura otro día...\n")
             continuar = False
+
+    imprimir_lento("Gracias por jugar. ¡Hasta la próxima, valiente aventurero!\n")
+
+if __name__ == "__main__":
+    main()
