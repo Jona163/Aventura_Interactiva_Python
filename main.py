@@ -71,3 +71,7 @@ def combate(personaje, enemigo):
             return False
         else:
             imprimir_lento("Opción no válida. El enemigo te golpea mientras dudas.\n")
+
+        dano_enemigo = random.randint(5, 20)
+        imprimir_lento(f"El {enemigo} te ataca y te hace {dano_enemigo} de daño.")
+        vida_personaje -= dano_enemigo
