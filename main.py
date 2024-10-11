@@ -105,5 +105,6 @@ def main():
 
     imprimir_lento("Gracias por jugar. ¡Hasta la próxima, valiente aventurero!\n")
 
+#Metodo main
 if __name__ == "__main__":
     main()
