@@ -66,3 +66,8 @@ def combate(personaje, enemigo):
             if vida_enemigo <= 0:
                 imprimir_lento(f"¡Has derrotado al {enemigo}!\n")
                 return True
+        elif accion == '2':
+            imprimir_lento("¡Decides huir como un cobarde!")
+            return False
+        else:
+            imprimir_lento("Opción no válida. El enemigo te golpea mientras dudas.\n")
