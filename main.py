@@ -14,7 +14,6 @@ def imprimir_lento(texto, retraso=0.04):
         time.sleep(retraso)
     print()
 
-
 def introduccion():
     """Introducción del juego."""
     imprimir_lento("¡Bienvenido, valiente aventurero, a las tierras místicas de Pythonia!")
