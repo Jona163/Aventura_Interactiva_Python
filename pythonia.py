@@ -102,3 +102,8 @@ def main():
     introduccion()
     personaje = elegir_personaje()
     imprimir_lento(f"Has elegido ser un {personaje}. ¡Una excelente elección!\n", color=Color.CIAN)
+    
+    continuar = True
+    while continuar:
+        enemigo = encuentro_enemigo()
+        resultado = combate(personaje, enemigo)
