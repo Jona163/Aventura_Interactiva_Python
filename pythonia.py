@@ -73,3 +73,7 @@ def combate(personaje, enemigo):
         if accion == '1':
             dano = random.randint(10, 30)
             imprimir_lento(f"¡Atacas al {enemigo} y le haces {dano} de daño!", color=Color.VERDE)
+            vida_enemigo -= dano
+            if vida_enemigo <= 0:
+                imprimir_lento(f"¡Has derrotado al {enemigo}!\n", color=Color.VERDE)
+                return True
