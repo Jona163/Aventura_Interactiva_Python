@@ -107,3 +107,8 @@ def main():
     while continuar:
         enemigo = encuentro_enemigo()
         resultado = combate(personaje, enemigo)
+        if resultado:
+            tesoro()
+        else:
+            imprimir_lento("Te recuperas de la batalla y decides continuar tu aventura otro día...\n", color=Color.AMARILLO)
+            continuar = False
