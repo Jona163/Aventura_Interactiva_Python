@@ -62,3 +62,8 @@ def combate(personaje, enemigo):
     """Sistema de combate."""
     vida_personaje = 100
     vida_enemigo = 50
+
+    while vida_personaje > 0 and vida_enemigo > 0:
+        imprimir_lento(f"Tu vida: {vida_personaje} | Vida del {enemigo}: {vida_enemigo}\n", color=Color.AZUL)
+        imprimir_lento("1. Atacar", color=Color.VERDE)
+        imprimir_lento("2. Huir\n", color=Color.VERDE)
