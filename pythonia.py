@@ -114,3 +114,6 @@ def main():
             continuar = False
 
     imprimir_lento("Gracias por jugar. ¡Hasta la próxima, valiente aventurero!\n", color=Color.CIAN)
+
+if __name__ == "__main__":
+    main()
