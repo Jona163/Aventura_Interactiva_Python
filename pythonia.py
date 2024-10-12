@@ -3,3 +3,7 @@
 # Descripción: Juego simple en Python que simula un encuentro con enemigos
 # y la obtención de tesoros. Incluye efectos visuales con colores.
 # GitHub: https://github.com/Jona163
+
+#Importacion de librerias a ocupar:
+import random
+import time
