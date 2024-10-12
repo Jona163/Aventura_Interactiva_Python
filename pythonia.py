@@ -40,7 +40,6 @@ def elegir_personaje():
     imprimir_lento("2. Mago", color=Color.VERDE)
     imprimir_lento("3. Ladrón\n", color=Color.VERDE)
 
-
     while True:
         eleccion = input(Color.AMARILLO + "Escribe 1, 2, o 3: " + Color.RESET).strip()
         if eleccion == '1':
@@ -51,3 +50,10 @@ def elegir_personaje():
             return "Ladrón"
         else:
             imprimir_lento("Por favor, elige una opción válida.\n", color=Color.ROJO)
+
+def encuentro_enemigo():
+    """Encuentro con un enemigo."""
+    enemigos = ["Orco", "Esqueleto", "Lobo", "Goblin"]
+    enemigo = random.choice(enemigos)
+    imprimir_lento(f"Te has encontrado con un {enemigo}. ¡Prepárate para la batalla!\n", color=Color.ROJO)
+    return enemigo
