@@ -80,3 +80,9 @@ def combate(personaje, enemigo):
        elif accion == '2':
             imprimir_lento("¡Decides huir como un cobarde!", color=Color.ROJO)
             return False
+        else:
+            imprimir_lento("Opción no válida. El enemigo te golpea mientras dudas.\n", color=Color.ROJO)
+
+        dano_enemigo = random.randint(5, 20)
+        imprimir_lento(f"El {enemigo} te ataca y te hace {dano_enemigo} de daño.", color=Color.ROJO)
+        vida_personaje -= dano_enemigo
