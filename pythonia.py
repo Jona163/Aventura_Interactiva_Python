@@ -58,7 +58,6 @@ def encuentro_enemigo():
     imprimir_lento(f"Te has encontrado con un {enemigo}. ¡Prepárate para la batalla!\n", color=Color.ROJO)
     return enemigo
 
-
 def combate(personaje, enemigo):
     """Sistema de combate."""
     vida_personaje = 100
