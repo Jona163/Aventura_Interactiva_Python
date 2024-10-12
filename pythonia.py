@@ -24,3 +24,11 @@ def imprimir_lento(texto, retraso=0.04, color=Color.RESET):
         print(color + caracter, end='', flush=True)
         time.sleep(retraso)
     print(Color.RESET)
+
+def introduccion():
+    """Introducción del juego."""
+    imprimir_lento("¡Bienvenido, valiente aventurero, a las tierras místicas de Pythonia!", color=Color.CIAN)
+    imprimir_lento("Estás a punto de embarcarte en una búsqueda llena de peligro, misterio y gloria.", color=Color.CIAN)
+    imprimir_lento("Elige tu camino sabiamente, porque cada decisión dará forma a tu destino.", color=Color.CIAN)
+    imprimir_lento("Comencemos tu aventura...\n", color=Color.AMARILLO)
+    time.sleep(2)
