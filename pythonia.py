@@ -67,3 +67,9 @@ def combate(personaje, enemigo):
         imprimir_lento(f"Tu vida: {vida_personaje} | Vida del {enemigo}: {vida_enemigo}\n", color=Color.AZUL)
         imprimir_lento("1. Atacar", color=Color.VERDE)
         imprimir_lento("2. Huir\n", color=Color.VERDE)
+
+
+        accion = input(Color.AMARILLO + "Escribe 1 o 2: " + Color.RESET).strip()
+        if accion == '1':
+            dano = random.randint(10, 30)
+            imprimir_lento(f"¡Atacas al {enemigo} y le haces {dano} de daño!", color=Color.VERDE)
