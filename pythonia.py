@@ -77,3 +77,6 @@ def combate(personaje, enemigo):
             if vida_enemigo <= 0:
                 imprimir_lento(f"¡Has derrotado al {enemigo}!\n", color=Color.VERDE)
                 return True
+       elif accion == '2':
+            imprimir_lento("¡Decides huir como un cobarde!", color=Color.ROJO)
+            return False
