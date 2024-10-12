@@ -17,3 +17,10 @@ class Color:
     AMARILLO = "\033[33m"
     CIAN = "\033[36m"
     MAGENTA = "\033[35m"
+    
+def imprimir_lento(texto, retraso=0.04, color=Color.RESET):
+    """Imprime el texto lentamente para crear un efecto dramático."""
+    for caracter in texto:
+        print(color + caracter, end='', flush=True)
+        time.sleep(retraso)
+    print(Color.RESET)
